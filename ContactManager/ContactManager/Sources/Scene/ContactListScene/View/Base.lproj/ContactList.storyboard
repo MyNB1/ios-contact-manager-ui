@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,29 +14,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ContactListViewController" customModule="ContactManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wm9-ww-53f">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactTableViewCell" textLabel="9F2-Un-UWQ" detailTextLabel="2q4-1O-JBw" style="IBUITableViewCellStyleSubtitle" id="03p-rR-IT5" customClass="ContactTableViewCell" customModule="ContactManager" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="53.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="53.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="03p-rR-IT5" id="dYb-o0-Y5M">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="53.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="53.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="name(age)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9F2-Un-UWQ">
-                                                    <rect key="frame" x="20" y="7.3333333333333357" width="74" height="18"/>
+                                                    <rect key="frame" x="20" y="7.5" width="74" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2q4-1O-JBw">
-                                                    <rect key="frame" x="19.999999999999996" y="28" width="49.666666666666664" height="17"/>
+                                                    <rect key="frame" x="20" y="28" width="50" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -51,14 +51,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7N-fa-z8G">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <navigationItem title="연락처" id="QlT-Zz-4gv">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="8Yj-qI-K7v">
+                                            <connections>
+                                                <action selector="tapAddContactButton:" destination="BYZ-38-t0r" id="ayZ-yy-tAq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="p7N-fa-z8G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8F7-tQ-bGC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wm9-ww-53f" secondAttribute="bottom" id="TbR-WD-37v"/>
                             <constraint firstItem="Wm9-ww-53f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WeF-lX-DX9"/>
+                            <constraint firstItem="p7N-fa-z8G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eHj-lB-eiz"/>
+                            <constraint firstItem="p7N-fa-z8G" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mGb-8f-k0p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wm9-ww-53f" secondAttribute="trailing" id="oyk-Y5-7q2"/>
-                            <constraint firstItem="Wm9-ww-53f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="r1p-iV-GIV"/>
+                            <constraint firstItem="Wm9-ww-53f" firstAttribute="top" secondItem="p7N-fa-z8G" secondAttribute="bottom" id="w0o-lG-vFo"/>
                         </constraints>
                     </view>
                     <connections>
@@ -71,6 +87,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

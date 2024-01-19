@@ -23,6 +23,6 @@ final class ContactTableViewCell: UITableViewCell {
     
     func setUpData(data: ContactInfoModel) {
         titleLabel.text = "\(data.name)(\(data.age))"
-        subtitleLabel.text = data.phoneNumber
+        subtitleLabel.text = data.contactNumber
     }
 }

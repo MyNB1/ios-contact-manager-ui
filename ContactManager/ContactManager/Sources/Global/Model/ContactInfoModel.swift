@@ -11,5 +11,6 @@ struct ContactInfoModel {
     
     var name: String
     var age: Int
-    var phoneNumber: String
+    var contactNumber: String
 }
+
