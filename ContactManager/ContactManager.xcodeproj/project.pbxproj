@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77073E052B55206A002A9A6D /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77073E042B55206A002A9A6D /* ContactInfo.swift */; };
+		7729DC712B5A08B8001DD6D8 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7729DC6F2B5A08B8001DD6D8 /* ContactTableViewCell.xib */; };
 		774781F92B479F0300B1159C /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774781F82B479F0300B1159C /* UIViewController+.swift */; };
 		774781FB2B479F5B00B1159C /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774781FA2B479F5B00B1159C /* UITableViewCell+.swift */; };
 		774782082B4EAE9B00B1159C /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774782072B4EAE9B00B1159C /* NewContactViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		77073E042B55206A002A9A6D /* ContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
+		7729DC6F2B5A08B8001DD6D8 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 		774781F82B479F0300B1159C /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		774781FA2B479F5B00B1159C /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		774782072B4EAE9B00B1159C /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E461E0FE2B44037200469E94 /* ContactList.storyboard */,
+				7729DC6F2B5A08B8001DD6D8 /* ContactTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				E461E1052B44037300469E94 /* LaunchScreen.storyboard in Resources */,
 				E461E1022B44037300469E94 /* Assets.xcassets in Resources */,
 				77F23FF02B57AF3700C2021A /* NewContact.storyboard in Resources */,
+				7729DC712B5A08B8001DD6D8 /* ContactTableViewCell.xib in Resources */,
 				E461E1002B44037200469E94 /* ContactList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

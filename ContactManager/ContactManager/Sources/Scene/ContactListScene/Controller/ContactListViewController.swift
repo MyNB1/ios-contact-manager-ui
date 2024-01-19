@@ -28,12 +28,18 @@ final class ContactListViewController: UIViewController {
         super.viewDidLoad()
         
         setUpTableView()
+        registerTableViewCell()
     }
     
     // MARK: Custom Methods
     private func setUpTableView() {
         contactTableView.delegate = self
         contactTableView.dataSource = self
+    }
+    
+    private func registerTableViewCell() {
+        let nib = UINib(nibName: ContactTableViewCell.className, bundle: nil)
+        contactTableView.register(nib, forCellReuseIdentifier: ContactTableViewCell.className)
     }
     
     // MARK: @IBAction
@@ -55,7 +61,7 @@ final class ContactListViewController: UIViewController {
 extension ContactListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 70
     }
 }
 
@@ -69,7 +75,6 @@ extension ContactListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.className, for: indexPath) as? ContactTableViewCell else { return UITableViewCell() }
         
-        cell.configureUI()
         cell.setUpData(data: contactList[indexPath.row])
 
         return cell

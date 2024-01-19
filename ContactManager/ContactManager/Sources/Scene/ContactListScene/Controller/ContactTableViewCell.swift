@@ -10,19 +10,14 @@ import UIKit
 final class ContactTableViewCell: UITableViewCell {
     
     // MARK: @IBOutlet
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var subtitleLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var ageLabel: UILabel!
+    @IBOutlet weak var contactNumberLabel: UILabel!
     
     // MARK: Custom Methods
-    func configureUI() {
-        let image = UIImage(systemName: "chevron.right")
-        let rightImageView = UIImageView(image: image)
-        rightImageView.tintColor = .systemGray3
-        accessoryView = rightImageView
-    }
-    
     func setUpData(data: ContactInfoModel) {
-        titleLabel.text = "\(data.name)(\(data.age))"
-        subtitleLabel.text = data.contactNumber
+        nameLabel.text = data.name
+        ageLabel.text = "\(data.age) 세"
+        contactNumberLabel.text = data.contactNumber
     }
 }
